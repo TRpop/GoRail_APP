@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="step_list">
+        <item>0.1m</item>
+        <item>0.5m</item>
+        <item>1m</item>
+        <item>2m</item>
+    </string-array>
+</resources>

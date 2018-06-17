@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlActivity"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/control_distance_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bootstrapSize="md"
+            app:bootstrapBrand="info"
+            android:padding="10dp"
+            android:inputType="number"
+            app:roundedCorners="true"
+            android:layout_gravity="fill_horizontal"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/control_distance_set_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stepsize"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/control_step_size_spinner"
+            android:layout_width="wrap_content"
+            android:layout_gravity="fill_horizontal"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/control_step_size_set_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/control_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_columnSpan="3"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/control_stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            app:bootstrapBrand="danger"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_columnSpan="3"/>
+
+    </GridLayout>
+
+
+</LinearLayout>

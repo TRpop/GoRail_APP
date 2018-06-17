@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GoRail</string>
+
+    <string name="manual">temp</string>
+    <string name="distance">distance(m)</string>
+    <string name="stepsize">step size(m)</string>
+</resources>
