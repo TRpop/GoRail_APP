@@ -207,7 +207,8 @@ public abstract class Bluetooth {
             UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805f9b34fb");
 
             try {
-                mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(mBluetoothDevice.getUuids()[0].getUuid());
+                //mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(mBluetoothDevice.getUuids()[0].getUuid());
+                mBluetoothSocket = mBluetoothDevice.createRfcommSocketToServiceRecord(uuid);
                 Log.d( TAG, "create socket for "+mConnectedDeviceName);
 
             } catch (IOException e) {
